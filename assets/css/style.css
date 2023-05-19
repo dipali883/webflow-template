@@ -739,31 +739,39 @@ header nav ul li a:hover::before{
     background-color: var(--white);
 }
 .hero-img-section{
-    height:602px;
-    width:50%;
+    height:500px;
+    width:500px;
+    flex-shrink: 0;
 }
 .hero-section .hero-img{
     position: relative;
     z-index: 99;
 }
-.floating-hand{
+.hero-section .hero-img svg{
+    width: 100%;
+    height: auto;
+}
+.floating-hand {
     position: absolute;
-    top: 95px;
-    left: 149px;
+    top: 72px;
+    left: 121px;
     z-index: 9;
-    width: 274px;
+    width: 110px;
     height: 106px;
     animation: rotate-2 3.5s infinite linear;
 }
+
 .floating-hand svg{
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
 }
 .floating-ball{
     position: absolute;
     top: -16px;
-    left: 145px;
+    left: 115px;
     animation: move 3.5s infinite linear;
 }
 .floating-plan{
@@ -775,14 +783,14 @@ header nav ul li a:hover::before{
 
 .floating-plant{
     position: absolute;
-    bottom: 146px;
-    left: -9px;
+    bottom: 112px;
+    left: -18px;
     animation: grow 3s linear infinite alternate;
 }
 .floating-tree{
     position: absolute;
-    right: 113px;
-    bottom: 138px;
+    right: 48px;
+    bottom: 88px;
     animation: grow 3s linear infinite alternate;
 }
 .logo-slider{
@@ -1567,26 +1575,6 @@ footer{
         padding: 19px 50px;
         margin-bottom: 20px;
     }
-    .floating-tree{
-        left: 431px;
-        bottom: 200px;
-        right: auto;
-    }
-    .floating-hand svg{
-        width: 120px;
-        height: 99px;
-    }
-    .floating-hand{
-        top: 77px;
-        left: 164px;
-    }
-    .floating-plant{
-        top: 217px;
-        left: 40px;
-    }
-    .hero-img-section{
-        width: 100%;
-    }
     .hero-img svg{
         height: 400px;
     }
@@ -1696,13 +1684,7 @@ footer{
         width: 100%;
         margin-top: 20px;
     }
-    .floating-second-hand {
-        top: 171px;
-        left: -73px;
-        width: 168px;
-        height: 207px;
-        animation: mobile-rotate-2 3.5s infinite linear;
-    }
+   
     
 }
 @media only screen and (max-width: 768px) {
@@ -1751,30 +1733,17 @@ footer{
         padding: 19px 50px;
         margin-bottom: 20px;
     }
-    .floating-tree svg{
-        width: 46px !important;
-        height: 99px !important;
+
+    .floating-second-hand {
+        top: 122px;
+        left: -85px;
+        width: 408px;
+        height: 207px;
+        animation: rotate 3.5s infinite linear;
     }
-    .floating-plan svg{
-        width: 46px !important;
-        height: 99px !important;
-    }
-    .floating-plan{
-        left: 78%;
-        bottom: 43px !important;
-    }
-    .floating-ball{
-        top: -25px !important;
-        left: 223px !important;
-    }
-    .floating-plant{
-        top: 217px;
-        left: 40px;
-    }
-    .hero-img-section{
-        width: 100%;
-        height: 400px;
-    }
+
+
+
     .hero-img svg{
         width: 100%;
     }
@@ -1899,26 +1868,6 @@ footer{
         top: 102px;
         left: -84px;
     }
-    .floating-hand{
-        top: 67px;
-        left: 202px;
-        width: 207px;
-        height: 207px;
-        animation: rotate-2 3.5s infinite linear;
-    }
-    .floating-tree {
-        left: 481px;
-        bottom: 56px;
-        right: auto;
-    }
-    .floating-plant svg{
-        height:100px;
-        width: 100px;
-    }
-    .floating-plant{
-        top: 270px;
-        left: 95px;
-    }
     .footer-bottom{
         flex-direction: column;
         align-items: center;
@@ -1926,13 +1875,7 @@ footer{
     .footer-end > span:last-child {
         display: none;
     }
-    .floating-second-hand {
-        top: 122px;
-        left: -85px;
-        width: 408px;
-        height: 207px;
-        animation: rotate 3.5s infinite linear;
-    }
+    
 }
 
 @media only screen and (max-width:552px){
@@ -1958,12 +1901,60 @@ footer{
     .product-slide:nth-child(odd){
         margin-left: 0px;
     }
+    .syllbus-section .product-img{
+        height: 360px;
+        width: 300px;
+    }
     .floating-second-hand {
-        top: 171px;
-        left: -73px;
-        width: 168px;
-        height: 207px;
+        top: 146px;
+        left: 32px;
+        width: 68px;
+        height: 40px;
         animation: mobile-rotate-2 3.5s infinite linear;
+    }
+    .hero-img-section{
+        height:300px;
+        width:300px;
+        flex-shrink: 0;
+    }
+    .floating-hand svg{
+        height: 57px;
+        width: 60px;
+    }
+    .floating-hand{
+        top: 42px;
+        left: 75px;
+        animation: mobile-rotate-2 3.5s infinite linear ;
+    }
+    .floating-ball svg{
+        height: 35px;
+        width:32px;
+    }
+    .floating-ball{
+        top: 4px;
+        left: 69px;
+    }
+    .floating-plant svg {
+        height: 70px;
+        width: 80px;
+    }
+    .floating-plant {
+        bottom: 74px;
+        left: -13px;
+    }
+   
+    .floating-tree {
+        left: 219px;
+        bottom: 79px;
+        right: auto;
+    }
+    .floating-tree svg{
+        height: 90px;
+        width: 60px;
+    }
+    .floating-plan svg{
+        height: 60px;
+        width: 60px;
     }
 }
 @media only screen and (max-width: 375px){
@@ -1974,9 +1965,6 @@ footer{
     .product-slide{
         flex-direction: column;
     }
-    .hero-img-section{
-        height: 400px;
-    }
     .hero-content a.btn span{
         position: relative;
         z-index: 99;
@@ -1984,45 +1972,7 @@ footer{
     .hero-section .hero-content h1{
         font-size:50px;
     }
-    .floating-hand svg{
-        height: 57px;
-        width: 126px;
-    }
-    .floating-hand{
-        top: 96px !important;
-        left: 69px !important;
-        height: 150px;
-        width: 140px;
-    }
-    .floating-ball svg{
-        height: 45px;
-        width:55px;
-    }
-    .floating-ball{
-        top: 4px !important;
-        left: 69px !important;
-    }
-    .floating-plant svg {
-        height: 70px;
-        width: 80px;
-    }
-    .floating-plant {
-        top: 244px;
-        left: -11px;
-    }
-    .floating-tree svg{
-        height: 90px;
-        width: 60px;
-    }
-    .floating-tree {
-        left: 254px;
-        bottom: 90px;
-        right: auto;
-    }
-    .floating-plan svg{
-        height: 80px;
-        width: 80px;
-    }
+
     .hero-card-section{
         padding: 16px;
     }
@@ -2052,13 +2002,6 @@ footer{
     }
     .floating-smile svg{
         width: 6px !important;
-    }
-    .floating-second-hand {
-        top: 171px;
-        left: -73px;
-        width: 168px;
-        height: 207px;
-        animation: mobile-rotate-2 3.5s infinite linear;
     }
     .syllbus-section .product-img{
         margin: 0;
@@ -2146,9 +2089,6 @@ footer{
     .footer-bottom-rightside ul{
         gap: 14px;
     }
-    /* .syllbus-section .product-img svg{
-        width: 100%;
-    } */
     .hero-descriptive-section{
         margin-left: 0px;
     }
