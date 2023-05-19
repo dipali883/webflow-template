@@ -748,16 +748,23 @@ header nav ul li a:hover::before{
 }
 .floating-hand{
     position: absolute;
-    top: 98px;
-    left: 133px;
+    top: 95px;
+    left: 149px;
     z-index: 9;
-    animation: drag 2.5s infinite linear;
+    width: 274px;
+    height: 106px;
+    animation: rotate-2 3.5s infinite linear;
+}
+.floating-hand svg{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .floating-ball{
     position: absolute;
-    top: 14px;
-    left: 115px;
-    animation: move 5s infinite linear;
+    top: -16px;
+    left: 145px;
+    animation: move 3.5s infinite linear;
 }
 .floating-plan{
     position: absolute;
@@ -880,13 +887,17 @@ header nav ul li a:hover::before{
 }
 .floating-second-hand{
     position: absolute;
-    top: 127px;
-    left: 125px;
+    top: 123px;
+    left: 0;
     transition: all .5s;
+    width: 264px;
+    height: 100px;
+    animation: rotate 3.5s infinite linear;
 }
 .floating-second-hand svg{
-    animation: rotate 3.5s infinite linear;
-
+    position: absolute;
+    top: 0;
+    left: 50%;
 }
 .product-content{
     width:50%;
@@ -1685,9 +1696,16 @@ footer{
         width: 100%;
         margin-top: 20px;
     }
-    .floating-hand svg{
+    /* .floating-hand svg{
         height: 99px;
         width: 120px;
+    } */
+    .floating-second-hand {
+        top: 171px;
+        left: -73px;
+        width: 168px;
+        height: 207px;
+        animation: mobile-rotate-2 3.5s infinite linear;
     }
     
 }
@@ -1746,25 +1764,16 @@ footer{
         height: 99px !important;
     }
     .floating-plan{
-        left: 226px !important;
-        bottom: 105px !important;
-        right: auto !important;
+        left: 78%;
+        bottom: 43px !important;
     }
-    .floating-ball svg{
+    /* .floating-ball svg{
         width: 46px !important;
         height: 99px !important;
-    }
+    } */
     .floating-ball{
-        top: 5px !important;
-        left: 23px !important;
-    }
-    .floating-hand svg{
-        width: 80px !important;
-        height: 99px !important;
-    }
-    .floating-hand{
-        top: 88px !important;
-        left: 51px !important;
+        top: -25px !important;
+        left: 223px !important;
     }
     .floating-plant{
         top: 217px;
@@ -1895,25 +1904,24 @@ footer{
     .syllbus-section .hero-img svg{
         width: 100px;
     }
-    .floating-second-hand{
-        top: 129px;
-        left: -78px
-    }
     .floating-smile{
         top: 102px;
         left: -84px;
     }
-    .floating-hand svg{
-        height: 99px;
-        width: 120px;
+    .floating-hand{
+        top: 67px;
+        left: 202px;
+        width: 207px;
+        height: 207px;
+        animation: rotate-2 3.5s infinite linear;
     }
-    .floating-tree svg{
+    /* .floating-tree svg{
         height: 150px;
         width: 60px;
-    }
+    } */
     .floating-tree {
-        left: 221px;
-        bottom: 280px;
+        left: 481px;
+        bottom: 56px;
         right: auto;
     }
     .floating-plant svg{
@@ -1921,22 +1929,13 @@ footer{
         width: 100px;
     }
     .floating-plant{
-        top: 191px;
-        left: -25px;
+        top: 270px;
+        left: 95px;
     }
-    .floating-ball svg{
+    /* .floating-ball svg{
         height: 45px;
         width:55px;
-    }
-    .floating-second-hand svg{
-        height: 45px;
-        width:55px;
-    }
-    .floating-second-hand{
-
-        top: 179px;
-        left: 61px;
-    }
+    } */
     .footer-bottom{
         flex-direction: column;
         align-items: center;
@@ -1944,7 +1943,15 @@ footer{
     .footer-end > span:last-child {
         display: none;
     }
+    .floating-second-hand {
+        top: 122px;
+        left: -85px;
+        width: 408px;
+        height: 207px;
+        animation: rotate 3.5s infinite linear;
+    }
 }
+
 @media only screen and (max-width:552px){
     .still-question .product-img{
         width: 100%;
@@ -1967,6 +1974,13 @@ footer{
     }
     .product-slide:nth-child(odd){
         margin-left: 0px;
+    }
+    .floating-second-hand {
+        top: 171px;
+        left: -73px;
+        width: 168px;
+        height: 207px;
+        animation: mobile-rotate-2 3.5s infinite linear;
     }
 }
 @media only screen and (max-width: 375px){
@@ -1992,16 +2006,18 @@ footer{
         width: 126px;
     }
     .floating-hand{
-        top: 93px !important;
-        left: 69px !important; 
+        top: 96px !important;
+        left: 69px !important;
+        height: 150px;
+        width: 140px;
     }
     .floating-ball svg{
         height: 45px;
         width:55px;
     }
     .floating-ball{
-        top: 14px;
-        left: 25px;
+        top: 4px !important;
+        left: 69px !important;
     }
     .floating-plant svg {
         height: 70px;
@@ -2054,13 +2070,12 @@ footer{
     .floating-smile svg{
         width: 6px !important;
     }
-    .floating-second-hand svg{
-        height: 50px;
-        width: 80px !important;
-    }
     .floating-second-hand {
-        top: 179px;
-        left: 57px;
+        top: 171px;
+        left: -73px;
+        width: 168px;
+        height: 207px;
+        animation: mobile-rotate-2 3.5s infinite linear;
     }
     .syllbus-section .product-img{
         margin: 0;
@@ -2288,13 +2303,16 @@ footer{
 
 /* key-frames */
 @keyframes move {
-   100%{
-        transform : rotate(360deg);
+   0% ,100%{
+        transform : translateY(10px);
+   }
+   50%{
+        transform : translateY(-10px);
    }
 }
 @keyframes drag {
     0%,100%{
-        transform : translateY(-10px);
+        transform : translateY(-5px);
     }
     50%{
         transform : translateY(5px);
@@ -2317,6 +2335,23 @@ footer{
         transform: rotate(30deg);
     }
  }
+ @keyframes rotate-2 {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(25deg);
+    }
+ }
+ @keyframes mobile-rotate-2 {
+    0%,100%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+ }
+ 
  @keyframes grow {
 	0%{
         transform : scale3d(1,0.9,1);
