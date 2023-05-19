@@ -1961,6 +1961,9 @@ footer{
         top: 14px;
         left: 14px;
     }
+    .hero-section .hero-content h1{
+        font-size:50px;
+    }
 }
 @media only screen and (max-width: 375px){
     .container{
@@ -1974,9 +1977,7 @@ footer{
         position: relative;
         z-index: 99;
     }
-    .hero-section .hero-content h1{
-        font-size:50px;
-    }
+   
 
     .hero-card-section{
         padding: 16px;
