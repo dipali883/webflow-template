@@ -753,10 +753,10 @@ header nav ul li a:hover::before{
 }
 .floating-hand {
     position: absolute;
-    top: 72px;
-    left: 121px;
+    top: 84px;
+    left: 122px;
     z-index: 9;
-    width: 110px;
+    width: 260px;
     height: 106px;
     animation: rotate-2 3.5s infinite linear;
 }
@@ -765,7 +765,7 @@ header nav ul li a:hover::before{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 110px;
     height: auto;
 }
 .floating-ball{
@@ -881,12 +881,17 @@ header nav ul li a:hover::before{
     padding: 124px 0 40px 0;
     border-radius: 0 0 80px 80px;
 }
-.product-img{
+.syllbus-section .product-img{
     height:442px;
-    width:50%;
+    width:602px;
     position: sticky;
     top: 5%;
     margin: 0 0px 50px 0;
+    flex-shrink: 0;
+}
+.syllbus-section .product-img svg{
+    max-width: 100%;
+    height: auto;
 }
 .floating-smile{
     position: absolute;
@@ -960,6 +965,7 @@ header nav ul li a:hover::before{
 .product-slide{
     display: flex;
     margin-bottom: 64px;
+    position: relative;
 }
 .product-slide:nth-child(odd){
     margin-left: 80px;
@@ -967,7 +973,7 @@ header nav ul li a:hover::before{
 .floating-arrow{
     transform: rotateY(-180deg);
     position: absolute;
-    right: 650px;
+    left: -90px;
 }
 /* scroll-bar design */
 ::-webkit-scrollbar {
@@ -1605,10 +1611,10 @@ footer{
         padding: 50px 0 40px 0;
     }
     .syllbus-section .product-img{
-        width: 100%;
         position: relative;
-        top: 0;
-        margin:0 0 30px 0;
+    }
+    .floating-arrow{
+        right: 380px;
     }
     .syllbus-section .product-content{
         width: 100%;
@@ -1617,7 +1623,7 @@ footer{
         margin-bottom: 30px;
     }
     .syllbus-section .product-content span{
-        top: 44px;
+        top: 14px;
     }
     .product-slide{
         margin-bottom: 50px;
@@ -1684,8 +1690,9 @@ footer{
         width: 100%;
         margin-top: 20px;
     }
-   
-    
+    .floating-dashed-arw,.floating-arrow{
+        display: none;
+    }
 }
 @media only screen and (max-width: 768px) {
     .container{
@@ -1735,11 +1742,14 @@ footer{
     }
 
     .floating-second-hand {
-        top: 122px;
-        left: -85px;
-        width: 408px;
-        height: 207px;
+        top: 84px;
+        left: -10px;
+        width: 198px;
+        height: 60px;
         animation: rotate 3.5s infinite linear;
+    }
+    .floating-second-hand svg{
+        width: 80px;
     }
 
 
@@ -1774,10 +1784,8 @@ footer{
         padding: 50px 0 40px 0;
     }
     .syllbus-section .product-img{
-        width: 100%;
-        position: relative;
-        top: 0;
-        margin:0 0 30px 0;
+        width: 400px;
+        height: 400px;
     }
     .syllbus-section .product-content{
         width: 100%;
@@ -1876,6 +1884,7 @@ footer{
         display: none;
     }
     
+  
 }
 
 @media only screen and (max-width:552px){
@@ -1895,22 +1904,21 @@ footer{
     .footer-end > span:last-child {
         display: none;
     }
-    .floating-dashed-arw{
-        display: none;
-    }
     .product-slide:nth-child(odd){
         margin-left: 0px;
     }
     .syllbus-section .product-img{
-        height: 360px;
+        height: 250px;
         width: 300px;
     }
     .floating-second-hand {
-        top: 146px;
-        left: 32px;
-        width: 68px;
-        height: 40px;
+        top: 68px;
+        left: 0;
+        width: 128px;
         animation: mobile-rotate-2 3.5s infinite linear;
+    }
+    .floating-second-hand svg{
+        width:60px;
     }
     .hero-img-section{
         height:300px;
