@@ -1696,10 +1696,6 @@ footer{
         width: 100%;
         margin-top: 20px;
     }
-    /* .floating-hand svg{
-        height: 99px;
-        width: 120px;
-    } */
     .floating-second-hand {
         top: 171px;
         left: -73px;
@@ -1767,10 +1763,6 @@ footer{
         left: 78%;
         bottom: 43px !important;
     }
-    /* .floating-ball svg{
-        width: 46px !important;
-        height: 99px !important;
-    } */
     .floating-ball{
         top: -25px !important;
         left: 223px !important;
@@ -1784,7 +1776,6 @@ footer{
         height: 400px;
     }
     .hero-img svg{
-        /* height: 400px; */
         width: 100%;
     }
     .logo-slider{
@@ -1915,10 +1906,6 @@ footer{
         height: 207px;
         animation: rotate-2 3.5s infinite linear;
     }
-    /* .floating-tree svg{
-        height: 150px;
-        width: 60px;
-    } */
     .floating-tree {
         left: 481px;
         bottom: 56px;
@@ -1932,10 +1919,6 @@ footer{
         top: 270px;
         left: 95px;
     }
-    /* .floating-ball svg{
-        height: 45px;
-        width:55px;
-    } */
     .footer-bottom{
         flex-direction: column;
         align-items: center;
