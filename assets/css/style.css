@@ -1373,7 +1373,11 @@ header nav ul li a:hover::before{
 .still-question .background-floating-img{
     position: absolute;
     bottom: 0;
-    right: 100px;
+    right: 70px;
+}
+.still-question .background-floating-img svg{
+    width: 590px;
+    height: 300px;
 }
 .still-question .product-img-main{
     position: relative;
@@ -1382,11 +1386,15 @@ header nav ul li a:hover::before{
 }
 
 .still-question .product-img{
-    height: 430px;
+    position: relative;
     width: 0;
     top: 0;
     margin: 0;
     z-index: 9;
+}
+.still-question .product-img svg{
+    height: 430px;
+    width: 570px;
 }
 .still-question .product-floating-plan{
     position: absolute;
@@ -1676,6 +1684,10 @@ footer{
     .still-question .product-img-main{
         width: 100%;
     }
+    .still-question .product-img svg {
+        height: 370px;
+        width: 450px;
+    }
     .footer-logo svg{
         width: 160px;
         height:50px;
@@ -1692,6 +1704,14 @@ footer{
     }
     .floating-dashed-arw,.floating-arrow{
         display: none;
+    }
+    .still-question .background-floating-img svg {
+        width: 410px;
+        height: 280px;
+    }
+    .still-question .background-floating-img {
+        left: 40px;
+        bottom: -2px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -1751,8 +1771,6 @@ footer{
     .floating-second-hand svg{
         width: 80px;
     }
-
-
 
     .hero-img svg{
         width: 100%;
@@ -1847,16 +1865,7 @@ footer{
     .still-question .product-img{
         width: 100%;
     }
-    .still-question .product-img svg{
-        width: 100%;
-    }
-    .still-question .background-floating-img {
-        bottom: 0px;
-        right: 140px;
-    }
-    .still-question .background-floating-img svg{
-        width: 100%;
-    }
+
     .footer-logo svg{
         width: 160px;
         height:50px;
@@ -2117,6 +2126,7 @@ footer{
     }
      .still-question .product-img svg{
         width: 300px;
+        height: 300px;
     }
     .still-question .background-floating-img svg{
         width: 300px;
@@ -2233,7 +2243,14 @@ footer{
         bottom: 20px;
         height: 20px;
     }
-
+    .still-question .background-floating-img svg {
+        width: 300px;
+        height: 280px;
+    }
+    .still-question .background-floating-img {
+        left: 10px;
+        bottom: -12px;
+    }
 }
 
 
